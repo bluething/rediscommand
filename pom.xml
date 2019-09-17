@@ -41,6 +41,16 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- 
+		I customize embedded redis from https://github.com/ozimov/embedded-redis
+		Add new redis version in jar
+		 -->
+		<dependency>
+			<groupId>it.ozimov</groupId>
+			<artifactId>embedded-redis</artifactId>
+			<version>0.7.4-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 	<build>
