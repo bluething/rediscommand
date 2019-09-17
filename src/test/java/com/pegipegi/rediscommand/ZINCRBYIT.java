@@ -46,6 +46,10 @@ public class ZINCRBYIT {
 		stringRedisTemplate.delete(redisKey);
 	}
 	
+	/*
+	 * https://redis.io/commands/zincrby
+	 * see https://redis.io/commands/zrevrangebyscore
+	 * */
 	@Test
 	public void zincrbyGivenNewMemberThenScoreIsOne() {
 		//given
@@ -62,6 +66,10 @@ public class ZINCRBYIT {
 		
 	}
 	
+	/*
+	 * https://redis.io/commands/zincrby
+	 * see https://redis.io/commands/zrevrangebyscore
+	 * */
 	@Test
 	public void zincrbyGivenTenThousandMemberWithRandomScoreThenGetTenHighestMember() {
 		//given
